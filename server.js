@@ -3,11 +3,14 @@ function startServer(){
 	
 	const express = require('express');
 	var app = express();
-
+	var bodyParser = require('body-parser')
 	var reslog = [];
+	app.use(bodyParser.urlencoded({ extended: false }))
+	app.use(bodyParser.json());
 
 	app.post('/', function(req, res){
 		console.log('POST /');
+
 		console.log(req.body);
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		res.end('thanks');
