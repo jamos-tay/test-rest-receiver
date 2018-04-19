@@ -11,6 +11,9 @@ function startServer(){
 	app.post('/', function(req, res){
 		console.log('POST /');
 
+		console.log('Headers');
+		console.log(req.headers);
+		console.log('Body');
 		console.log(req.body);
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		res.end('thanks');
