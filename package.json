@@ -1,0 +1,27 @@
+{
+  "name": "test-rest-receiver",
+  "version": "1.0.0",
+  "description": "Wed Reg",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "4.4.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jamos Tay",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamos-tay/test-rest-receiver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamos-tay/test-rest-receiver/issues"
+  },
+  "homepage": "https://github.com/jamos-tay/test-rest-receiver#readme"
+}
