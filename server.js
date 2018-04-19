@@ -8,15 +8,10 @@ function startServer(){
 
 	app.post('/', function(req, res){
 		console.log('POST /');
-		reslog.push(req);
+		console.log(req);
 		console.dir(req.body);
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		res.end('thanks');
-	});
-	
-	app.get('/', function(req, res){
-		console.log('GET /')
-		res.end(reslog.toString());
 	});
 	
 	port = process.env.PORT || 3000;;
